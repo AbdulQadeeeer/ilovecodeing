@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert images to PDF online with advanced features like page spread, border editing, and more. Fast, secure, and easy to use.">
+  <meta name="keywords" content="image to pdf, pdf converter, image converter, pdf editor, online pdf tools">
+  <meta name="author" content="Your Name">
+  <title>Image to PDF Converter - Convert Images to PDF Online</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Image to PDF Converter</h1>
+    <p>Convert your images to PDF with advanced editing options.</p>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <input type="file" id="imageInput" accept="image/*" multiple>
+      <button id="convertBtn">Convert to PDF</button>
+    </section>
+
+    <section class="options-section">
+      <h2>Advanced Options</h2>
+      <label>
+        <input type="checkbox" id="pageSpread"> Enable Page Spread
+      </label>
+      <label>
+        Border Size: <input type="number" id="borderSize" min="0" max="50" value="0"> px
+      </label>
+      <label>
+        Page Orientation:
+        <select id="pageOrientation">
+          <option value="portrait">Portrait</option>
+          <option value="landscape">Landscape</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="preview-section">
+      <h2>Preview</h2>
+      <div id="imagePreview"></div>
+    </section>
+
+    <section class="download-section">
+      <a id="downloadLink" style="display:none;">Download PDF</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Image to PDF Converter. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert PDF to high-quality images online. Advanced features like page spread, border editing, and more.">
+  <meta name="keywords" content="PDF to Image, PDF Converter, Image Converter, PDF to JPG, PDF to PNG">
+  <meta name="author" content="Your Name">
+  <title>PDF to Image Converter - Convert PDF to JPG/PNG Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>PDF to Image Converter</h1>
+    <p>Convert your PDF files to high-quality images (JPG, PNG) with advanced editing options.</p>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <input type="file" id="pdf-input" accept="application/pdf">
+      <button id="convert-btn">Convert to Image</button>
+    </section>
+
+    <section id="options-section">
+      <h2>Advanced Options</h2>
+      <label>
+        <input type="checkbox" id="page-spread"> Enable Page Spread
+      </label>
+      <label>
+        Border Size: <input type="number" id="border-size" min="0" max="50" value="0"> px
+      </label>
+      <label>
+        Image Format:
+        <select id="image-format">
+          <option value="jpeg">JPEG</option>
+          <option value="png">PNG</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="output-section">
+      <h2>Converted Images</h2>
+      <div id="image-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 PDF to Image Converter. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
